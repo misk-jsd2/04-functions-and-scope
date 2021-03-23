@@ -133,8 +133,20 @@ person.speak()
 => 'Hello, World!'
 ```
 ---
+
+## You Do: Functions Practice
+
+Open a new [Node repl.it](repl.it) and complete the following.
+
+
+1. Write a function, using the function keyword. Call the function sayHello. When invoked, sayHello should print the string 'hello world'.
+
+
+---
 <a name="lab1"></a>
 ## Rolling Dice: Lab (40 min)
+
+[Codesandbox Starter](https://codesandbox.io/s/jsd0309-dice-starter-r0ckr)
 
 For this lab, you'll be creating a page that displays a random update of two dice every time the user hits the "Roll Dice" button. To get started, open the [app.js file](starter-code/dice/js/app.js). Use the HTML and CSS code included in the starter code folder.
 
@@ -202,7 +214,22 @@ function doSomething (parameter) {
 // Argument
 doSomething(argument)
 ```
+
 ---
+
+## You Do: Functions Practice
+
+Work on these in your existing Node repl.
+
+
+1. Takes a parameter called "name" and console logs it
+1. Takes a parameter called "name" and console logs "hello" + name
+1. Takes a parameter called "number" and multiplies it by itself, then console logs the result
+
+
+
+---
+
 <a name="codealong3"></a>
 
 ## The Return Statement (25 min)
@@ -254,6 +281,18 @@ function speak (words) {
 By default, JavaScript functions will return an `undefined` value. To test this, use Node to define and run a function __without__ a return value. A `return` value "overwrites" this default value.
 
 ---
+
+## You Do: Functions Practice
+
+Work on these in your existing Node repl. These functions should all return something. Each should:
+
+1. Take a number as a parameter and return itself squared.
+1. Have 3 optional parameters, all numbers. Add all the numbers together. If the function is called without passing any numbers in, simply return 10.
+1. Take a number and add some amount of zeroes to the end, returning it (make sure you return a number, not a string)
+1. return a function that console logs 'hello world' (yes you can write functions inside functions!)
+
+---
+
 <a name="introduction1"></a>
 
 ## Introduction to Scope (25 min)
@@ -338,6 +377,38 @@ function getScore () {
 getScore();
 => 6
 ```
+
+---
+
+## You Do: Functions Practice
+
+Work on these in your existing Node repl. Write a small piece of code that meets the following requirements. 
+
+1. Has a global variable
+1. Has at least 1 variable in each function
+1. Has at least 1 function with parameters
+1. The function with parameters should modify that input and return something new
+
+Some ideas for inspiration:
+
+- Name scrambler (takes a string name input and modifies it in some way)
+- Take two numbers and return the square root of the difference
+- A function that shuffles an array.
+
+[BONUS: Extra practice Repl](https://replit.com/@marcwright/jsd0309-functions-practice)
+
+---
+
+## Review Questions
+1. What are functions in javascript and how can they be useful?
+1. How is a side effect different from an output?
+1. What is the difference between calling and referencing a function?
+1. How is a function declaration different than a function expression?
+1. Explain the difference between local and global scope.
+1. Explain how hoisting can affect functions.
+1. Explain how hoisting can affect variables.
+1. What does DRY mean?
+
 
 ---
 
